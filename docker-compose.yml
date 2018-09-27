@@ -1,0 +1,8 @@
+version: '3'
+services:
+    streamer:
+        image: webmonkey/record-player-streamer
+        devices:
+            - /dev/snd
+
+restart: unless-stopped
